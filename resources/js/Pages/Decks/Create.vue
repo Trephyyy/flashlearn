@@ -1,4 +1,5 @@
 <template>
+    <Head title="Create Flashcard Set" />
     <NavigationLayout>
         <div
             class="flex items-center justify-center w-screen min-h-[100vh] bg-white dark:bg-slate-900"
@@ -157,7 +158,7 @@
 
 <script setup>
 import { ref, reactive, watch } from "vue";
-import { router } from "@inertiajs/vue3";
+import { Head, router } from "@inertiajs/vue3";
 import NavigationLayout from "@/Layouts/NavigationLayout.vue";
 
 const name = ref("");

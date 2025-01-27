@@ -1,4 +1,5 @@
 <template>
+    <Head :title="'Edit Flashcard' + props.flashcard.question" />
     <NavigationLayout>
         <div class="absolute w-screen h-screen -z-10 dark:bg-gray-800"></div>
         <div class="container p-4 mx-auto dark:bg-gray-800">
@@ -48,7 +49,7 @@
 <script setup>
 import NavigationLayout from "@/Layouts/NavigationLayout.vue";
 import { ref } from "vue";
-import { router } from "@inertiajs/vue3";
+import { Head, router } from "@inertiajs/vue3";
 
 const props = defineProps(["flashcard"]);
 

@@ -3,7 +3,7 @@ import { ref, computed } from "vue";
 import { Transition } from "vue";
 import "iconify-icon";
 import NavigationLayout from "@/Layouts/NavigationLayout.vue";
-import { Link } from "@inertiajs/vue3";
+import { Head, Link } from "@inertiajs/vue3";
 
 const props = defineProps({
     flashcards: {
@@ -78,6 +78,7 @@ const markAsUnlearnt = () => {
 </script>
 
 <template>
+    <Head :title="'Revise ' + props.flashcards.name" />
     <NavigationLayout>
         <div class="relative w-screen min-h-screen dark:bg-slate-800">
             <h1 class="py-4 text-2xl font-bold text-center text-gray-200">

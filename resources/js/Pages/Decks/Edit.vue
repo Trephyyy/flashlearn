@@ -1,4 +1,5 @@
 <template>
+    <Head title="Edit Flashcard Set" />
     <NavigationLayout>
         <div
             class="flex items-center justify-center w-screen min-h-[100vh] bg-white dark:bg-slate-900"
@@ -124,9 +125,10 @@
 </template>
 
 <script setup>
+import "iconify-icon";
 import { ref, watch, computed } from "vue";
 import NavigationLayout from "@/Layouts/NavigationLayout.vue";
-import { router } from "@inertiajs/vue3";
+import { Head, router } from "@inertiajs/vue3";
 import { debounce } from "lodash";
 
 // Props

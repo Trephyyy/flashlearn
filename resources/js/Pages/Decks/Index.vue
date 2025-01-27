@@ -1,4 +1,5 @@
 <template>
+    <Head title="FLashcards" />
     <NavigationLayout>
         <div class="w-screen min-h-screen bg-white dark:bg-slate-900">
             <div class="container p-4 mx-auto dark:text-white">
@@ -44,6 +45,14 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="flex justify-end mt-4">
+                        <Link
+                            href="/decks/create"
+                            class="px-4 py-2 text-white bg-green-500 rounded dark:hover:bg-green-500 dark:bg-green-700 hover:bg-green-700"
+                        >
+                            Create Flashcard Set
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div></NavigationLayout
@@ -53,7 +62,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import NavigationLayout from "@/Layouts/NavigationLayout.vue";
-import { Link } from "@inertiajs/vue3";
+import { Head, Link } from "@inertiajs/vue3";
 import { Icon } from "@iconify/vue";
 
 const props = defineProps({

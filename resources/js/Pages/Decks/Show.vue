@@ -1,4 +1,5 @@
 <template>
+    <Head :title="`View ${flashcardSet.name}`" />
     <NavigationLayout>
         <div class="w-screen min-h-screen dark:text-white dark:bg-slate-900">
             <div class="container p-4 mx-auto">
@@ -49,7 +50,7 @@
 
 <script setup>
 import NavigationLayout from "@/Layouts/NavigationLayout.vue";
-import { Link } from "@inertiajs/vue3";
+import { Head, Link } from "@inertiajs/vue3";
 const props = defineProps(["flashcardSet"]);
 </script>
 
