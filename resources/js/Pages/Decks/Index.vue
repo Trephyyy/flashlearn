@@ -1,5 +1,5 @@
 <template>
-    <Head title="FLashcards" />
+    <Head title="Flashcards" />
     <NavigationLayout>
         <div class="w-screen min-h-screen bg-white dark:bg-slate-900">
             <div class="container p-4 mx-auto dark:text-white">
