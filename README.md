@@ -25,10 +25,10 @@
 
 ### Frontend
 - **Framework**: [Vue 3](https://vuejs.org/) / [Inertia](https://inertiajs.com/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) + css
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
 ### Backend
-- **Runtime**: [Node.js](https://nodejs.org/) + [Express](https://expressjs.com/)
+- **Core**: [Laravel](https://nodejs.org/)
 - **Database**: [PostgreSQL](https://www.postgresql.org/)
 
 ### Deployment
