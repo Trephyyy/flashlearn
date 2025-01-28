@@ -42,14 +42,14 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/trephyyy/flashlearn.git
+   git clone     https://github.com/trephyyy/flashlearn.git
    cd flashlearn
    ```
 
 2. **Install dependencies**
    ```bash
-   npm i
-   composer install
+    npm i
+    composer install
    ```
 
 3. **Connect database through .env**
@@ -58,17 +58,16 @@
 
 4. **Migrate the database**
    ```bash
-php artisan migrate
-```
+    php artisan migrate
+   ```
 
 5. **Generate app key**
    ```bash
-php artisan key:generate
-```
+    php artisan key:generate
+   ```
 
 6. **Start development server**
    ```bash
-php artisan serve
-npm run dev
-   
-```
+    php artisan serve
+    npm run dev   
+   ```
